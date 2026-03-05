@@ -20,7 +20,7 @@ export default function Navbar() {
                   alt="DentAssist Logo"
                   width={64}
                   height={64}
-                  className="object-contain transform-gpu"
+                  className="object-contain transform-gpu mix-blend-multiply"
                 />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-transparent">

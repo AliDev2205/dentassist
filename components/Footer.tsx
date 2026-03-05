@@ -14,7 +14,7 @@ export default function Footer() {
                                 <img
                                     src="/images/logo.png"
                                     alt="DentAssist Logo"
-                                    className="w-full h-full object-contain"
+                                    className="w-full h-full object-contain mix-blend-multiply"
                                 />
                             </div>
                             <span className="text-2xl font-bold bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent">

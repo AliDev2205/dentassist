@@ -98,23 +98,26 @@ export default function LiveChat() {
 
             {/* Fenêtre de chat */}
             {isOpen && (
-                <div className="fixed bottom-6 left-6 w-80 h-96 bg-white rounded-lg shadow-xl border z-50 flex flex-col">
+                <div className="fixed bottom-6 left-6 right-6 sm:right-auto sm:w-80 h-[500px] max-h-[70vh] bg-white rounded-3xl shadow-2xl border border-slate-200 z-50 flex flex-col transition-all duration-300 transform-gpu animate-in slide-in-from-bottom-4">
                     {/* Header du chat */}
-                    <div className="bg-green-500 text-white p-4 rounded-t-lg flex justify-between items-center">
-                        <div className="flex items-center">
-                            <span className="text-xl mr-2">💬</span>
+                    <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white p-5 rounded-t-3xl flex justify-between items-center shadow-lg">
+                        <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                                <span className="text-xl">💬</span>
+                            </div>
                             <div>
-                                <h3 className="font-semibold text-gray-900">Chat en direct</h3>
-                                <p className="text-gray-600">Disponible 24h/24</p>
-                                <p className="text-sm text-gray-500">
-                                    Cliquez sur le bouton vert en bas à gauche pour chatter avec notre assistant IA
-                                </p>   </div>
+                                <h3 className="font-bold text-lg leading-tight">Assistant DentAssist</h3>
+                                <div className="flex items-center gap-1.5">
+                                    <span className="w-2 h-2 bg-green-300 rounded-full animate-pulse"></span>
+                                    <p className="text-xs text-green-100 font-medium tracking-wide uppercase">En ligne</p>
+                                </div>
+                            </div>
                         </div>
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="text-white hover:text-green-200 text-lg"
+                            className="w-8 h-8 rounded-full hover:bg-white/10 flex items-center justify-center transition-colors duration-200"
                         >
-                            ×
+                            <i className="fa-solid fa-xmark text-lg"></i>
                         </button>
                     </div>
 
