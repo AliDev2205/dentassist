@@ -14,18 +14,16 @@ export default function Navbar() {
           {/* Logo et navigation desktop */}
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center group">
-              <div className="relative">
-                <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300 group-hover:scale-105 border border-slate-100 p-1.5">
-                  <Image
-                    src="/images/logo.png"
-                    alt="DentAssist Logo"
-                    width={40}
-                    height={40}
-                    className="object-contain"
-                  />
-                </div>
+              <div className="w-16 h-16 flex items-center justify-center mr-2 transition-all duration-300 group-hover:scale-110">
+                <Image
+                  src="/images/logo.png"
+                  alt="DentAssist Logo"
+                  width={64}
+                  height={64}
+                  className="object-contain transform-gpu"
+                />
               </div>
-              <span className="ml-3 text-2xl font-bold bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-br from-slate-900 to-slate-700 bg-clip-text text-transparent">
                 DentAssist
               </span>
             </Link>

@@ -10,7 +10,7 @@ export default function Footer() {
                     {/* Brand Section */}
                     <div className="lg:col-span-1">
                         <Link href="/" className="flex items-center group">
-                            <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mr-3 shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105 p-1.5">
+                            <div className="w-20 h-20 flex items-center justify-center mr-2 transition-all duration-300 group-hover:scale-105">
                                 <img
                                     src="/images/logo.png"
                                     alt="DentAssist Logo"
