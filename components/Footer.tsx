@@ -78,16 +78,16 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-4 text-white">Services</h3>
                         <ul className="space-y-3">
                             {[
-                                { label: "Trouver un dentiste", icon: "fa-solid fa-magnifying-glass" },
-                                { label: "Prise de rendez-vous", icon: "fa-solid fa-calendar-check" },
-                                { label: "Assistant IA dentaire", icon: "fa-solid fa-robot" },
-                                { label: "Conseils santé", icon: "fa-solid fa-stethoscope" }
+                                { label: "Trouver un dentiste", icon: "fa-solid fa-magnifying-glass", href: "/dashboard/doctors" },
+                                { label: "Prise de rendez-vous", icon: "fa-solid fa-calendar-check", href: "/dashboard/doctors" },
+                                { label: "Assistant IA dentaire", icon: "fa-solid fa-robot", href: "/dashboard/assistant" },
+                                { label: "Conseils santé", icon: "fa-solid fa-stethoscope", href: "/about" }
                             ].map((service) => (
                                 <li key={service.label}>
-                                    <span className="text-slate-300 hover:text-cyan-400 transition-all duration-300 flex items-center gap-2 group cursor-pointer">
+                                    <Link href={service.href} className="text-slate-300 hover:text-cyan-400 transition-all duration-300 flex items-center gap-2 group cursor-pointer">
                                         <i className={`fa-solid ${service.icon} text-xs group-hover:scale-110 transition-transform duration-300`}></i>
                                         {service.label}
-                                    </span>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
