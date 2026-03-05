@@ -132,7 +132,6 @@ export default function Footer() {
                             © {currentYear} DentAssist. Tous droits réservés.
                         </div>
                         <div className="mt-4 md:mt-0 flex items-center gap-2 text-sm text-slate-400">
-                            <i className="fa-solid fa-heart text-rose-500 animate-pulse"></i>
                             Réalisé par{" "}
                             <a
                                 href="https://wa.me/22965302251"

@@ -129,8 +129,8 @@ export default function LiveChat() {
                                 >
                                     <div
                                         className={`max-w-[80%] rounded-lg p-3 ${message.sender === 'user'
-                                                ? 'bg-green-500 text-white'
-                                                : 'bg-white border border-gray-200 text-gray-800'
+                                            ? 'bg-green-500 text-white'
+                                            : 'bg-white border border-gray-200 text-gray-800'
                                             }`}
                                     >
                                         <p className="text-sm">{message.text}</p>
@@ -192,7 +192,7 @@ export default function LiveChat() {
                             <button
                                 type="submit"
                                 disabled={!inputMessage.trim()}
-                                className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition disabled:bg-gray-300 disabled:cursor-not-allowed"
+                                className="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition disabled:bg-gray-300 disabled:cursor-not-allowed whitespace-nowrap flex-shrink-0"
                             >
                                 Envoyer
                             </button>
